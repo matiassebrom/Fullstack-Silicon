@@ -1,0 +1,40 @@
+<!-- Ejercicio 8:
+Crea una función que genere 100 números aleatorios entre 1 y 100 que no se repitan y luego
+imprima por pantalla usando document.write(text) -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TP-2 Ejercicio 8</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script>
+      printRandomNumber();
+
+      function printRandomNumber() {
+        let nums = [];
+
+        //hago un bucle hasta que nums llegue a 100
+        while (nums.length < 100) {
+          //genero un numero al azar
+          let randomNumber = random(0, 100);
+
+          //me fijo si esta en el array, y si no esta lo pongo y lo
+          if (!nums.includes(randomNumber)) {
+            nums.push(randomNumber);
+          }
+        }
+
+        //imprimo en pantalla cda numero
+        nums.forEach((num) => {
+          document.write(` ${num}  <br>`);
+        });
+      }
+
+      function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+    </script>
+  </body>
+</html>
