@@ -1,0 +1,42 @@
+<!-- 
+Ejercicio 5:
+
+Crear una función que muestre información sobre una cadena de texto que se le pasa como
+argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está
+formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TP-2 Ejercicio 5</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      //pido una palabra
+      let word = prompt("inserte una palababra");
+
+      //llamo a la funcion
+      haveCap(word);
+
+      //declaro la funcion
+      function haveCap(word) {
+        //guardo las mayúsculas
+        let caps = [];
+        for (let i = 0; i < word.length; i++) {
+          if (word[i] == word[i].toUpperCase()) {
+            caps.push(word[i]);
+          }
+        }
+        //comparo la cantidad de mayusculas con la cantidad de letras e imprimo el resultado
+        if (caps.length === word.length) {
+          document.write(`La palabra ${word} SOLO tiene mayusculas `);
+        } else if (caps.length === 0) {
+          document.write(`La palabra ${word} NO tiene mayusculas `);
+        } else {
+          document.write(`La palabra ${word} tiene mayusculas Y minusculas`);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!-- 
+Ejercicio 1:
+
+A partir del siguiente array que se proporciona: var valores = [verdadero, false, 2, "hola",
+"mundo", 3, char];
+1. Determinar cuál de los elementos de texto es mayor, es decir el que contenga más
+letras.
+2. Imprimir los elementos de menor a mayor cantidad de letras.
+3. Determinar el resultado de las cuatro operaciones matemáticas realizadas con los dos
+elementos numéricos. */ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TP-2 Ejercicio 1</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <script>
+      let verdadero, char;
+      var valores = [verdadero, false, 2, , "hola", "mundo", 3, char];
+      let valoresTexto = [];
+      elementoConMasLetras = "";
+      valores.forEach((valor) => {
+        if (typeof valor == "string") {
+          valoresTexto.push(valor);
+          elementoConMasLetras;
+
+          if (valor.length > elementoConMasLetras.length) {
+            elementoConMasLetras = valor;
+          }
+        }
+      });
+
+      console.log("los elementos de texto son " + valoresTexto);
+      console.log("el elemento con mas caracteres es " + elementoConMasLetras);
+
+      valoresTexto.sort(function (a, b) {
+        return a.length - b.length;
+      });
+      console.log(
+        "los elementos de texto ordenados por cantidad de caracteres son " +
+          valoresTexto
+      );
+    </script>
+  </body>
+</html>

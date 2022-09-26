@@ -1,0 +1,40 @@
+<!-- 
+Ejercicio 6:
+
+Escribir un script que muestre la posición de la primera vocal de un texto introducido por
+teclado.Por ejemplo: perro = “e” es la letra Nº2 ; árbol = “a” es la letra Nº1.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TP-2 Ejercicio 6</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      //declaro las vocales
+      let vowels = ["a", "e", "i", "o", "u"];
+      //pido una palabra
+      let word = prompt("inserte una palababra");
+
+      //llamo a la funcion
+      firstVowel(word);
+
+      //declaro la funcion
+      function firstVowel(word) {
+        //recorro la palabra
+        for (let i = 0; i < word.length; i++) {
+          console.log(word[i]);
+          //comparo cada letra de la palabra con las vocales y si una coincide muestro el resultado y corto la ejecución
+          for (let x = 0; x < vowels.length; x++) {
+            if (word[i].toUpperCase() === vowels[x].toUpperCase()) {
+              document.write(`La primer vocal es la letra ${i + 1} de ${word}`);
+              return;
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

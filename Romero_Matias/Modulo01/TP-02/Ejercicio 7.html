@@ -1,0 +1,31 @@
+<!-- 
+Ejercicio 7:
+Escribir una función que reciba un texto y lo devuelva al revés.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TP-2 Ejercicio 7</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      //pido una palabra
+      let word = prompt("inserte una palababra");
+
+      //llamo a la funcion
+      reverseWord(word);
+
+      //declaro la funcion
+      function reverseWord(word) {
+        document.write(
+          `La palabra al revez es ${word.split("").reverse().join("")}`
+          //word.split("") separa el string
+          //word.reverse lo da vuelta
+          //word.join("") lo vuelve a unir
+        );
+      }
+    </script>
+  </body>
+</html>
