@@ -1,6 +1,6 @@
 Título: Curso de programacion full stack
 
-- Subtitulo: Comisión A o B según corresponda
+- Subtitulo: Comisión A
 - Encabezado: Silicon Misiones - https://siliconmisiones.gob.ar/
 - Autor: Matias Romero
 - Descripción: este repositorio fue creado con fines académicos. Contiene
