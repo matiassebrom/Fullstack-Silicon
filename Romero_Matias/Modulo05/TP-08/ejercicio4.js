@@ -7,12 +7,12 @@ var persona = JSON.parse(rawdata);
 getNombre(persona);
 
 function getNombre(listadepersonas) {
-  for (var i = 0; i < persona["personas"].length; i++) {
-    if (persona["personas"][i]["Localidad"] === "Posadas") {
+  for (var i = 0; i < listadepersonas["personas"].length; i++) {
+    if (listadepersonas["personas"][i]["Localidad"] === "Posadas") {
       console.log(
-        persona["personas"][i]["nombre"] +
+        listadepersonas["personas"][i]["nombre"] +
           " " +
-          persona["personas"][i]["Apellido"]
+          listadepersonas["personas"][i]["Apellido"]
       );
     }
   }
