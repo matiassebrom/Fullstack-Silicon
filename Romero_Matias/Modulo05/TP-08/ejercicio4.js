@@ -4,6 +4,7 @@ const fs = require("fs");
 const rawdata = fs.readFileSync("../TP-07/pesonas.json", "utf8");
 var persona = JSON.parse(rawdata);
 
+console.log(persona);
 getNombre(persona);
 
 function getNombre(listadepersonas) {
