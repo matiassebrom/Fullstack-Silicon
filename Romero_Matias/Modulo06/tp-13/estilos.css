@@ -1,0 +1,89 @@
+img {
+  vertical-align: middle;
+  position: absolute;
+  left: 20px;
+  width: 5%;
+}
+
+header div {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: darkblue;
+  border: 2px solid darkblue;
+}
+
+nav {
+  padding: 5px;
+  text-align: center;
+  background-color: #e4e4e4;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  border: 1px solid gray;
+  padding: 5px;
+  font-size: 25px;
+  color: darkblue;
+}
+
+section h2 {
+  background-color: #e4e4e4;
+  margin: 0;
+  padding: 15px;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+th,
+h2 {
+  background-color: #e4e4e4;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.input_div label {
+  display: block;
+}
+
+form {
+  margin: 10px;
+}
+
+.form_section {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+
+.form_section_title {
+  position: relative;
+  z-index: 1;
+  top: -17px;
+  left: 5px;
+  background-color: white;
+}
+
+.input_radio input,
+.input_radio label {
+  display: inline;
+}
+
+.button_icon {
+  font-size: 12px !important;
+}
